@@ -1,0 +1,20 @@
+.Pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .Pagination-List-Con {
+    display: flex;
+    justify-content: unset;
+    flex-wrap: unset;
+    list-style-type: none;
+    margin: 0 20px 20px 20px;
+    .Pagination-List-Item {
+      width: 50px;
+      height: 30px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}

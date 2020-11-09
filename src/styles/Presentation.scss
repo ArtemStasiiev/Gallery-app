@@ -1,0 +1,55 @@
+@mixin font-color {
+    color: rgb(237, 237, 237);
+}
+@mixin background-color {
+    background-color: rgba(237, 237, 237, 0.3);
+}
+
+.Presentation {
+  height: 100%;
+  object-fit: cover;
+  video {
+    width: 100%;
+    position: relative;
+  }
+  .Shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 855px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    .Shadow-Content__Con {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      height: 50%;
+      h1 {
+        font-size: 50px;
+        @include font-color;
+        
+      }
+      p {
+        @include font-color;
+        font-size: 20px;
+      }
+      .Arrow-Btn {
+        margin-top: 100px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 2px solid rgb(237, 237, 237);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include background-color;
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}

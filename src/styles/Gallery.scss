@@ -1,0 +1,47 @@
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 99.8%;
+  header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    .Header-Btns-Con {
+      @include space-between;
+      width: 350px;
+      button {
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+  .Gallery-Con {
+    @include space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+    padding-bottom: 20px;
+    .Gallery-Item-Con {
+      width: 18%;
+      padding: 10px;
+      .Author-Btn-Con {
+        @include space-between;
+        cursor: pointer;
+      }
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+  }
+}

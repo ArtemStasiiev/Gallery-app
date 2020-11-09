@@ -1,0 +1,28 @@
+@mixin font-color {
+    color: rgb(237, 237, 237);
+}
+
+.Navbar {
+  width: 100%;
+  min-height: 50px;
+  background-color: rgba(171, 215, 230, 0.3);
+  position: absolute;
+  z-index: 1;
+  .Logo-Con {
+    margin-left: 50px;
+    display: flex;
+    img {
+      width: 50px;
+    }
+    div {
+      margin-left: 10px;
+      text-align: left;
+    }
+  }
+  p {
+    @include font-color;
+  }
+  h3 {
+    @include font-color;
+  }
+}
